@@ -4,7 +4,7 @@
 // }
 // console.log(getRandomNumber(100));
 
-//Arrow Funtion
+//Arrow Funtion = () => {}
 const getRandomNumber = limit =>
     Math.ceil(Math.random() * limit);
 
