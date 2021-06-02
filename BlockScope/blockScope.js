@@ -35,3 +35,5 @@ function countToTen() {
 }
 
 countToTen();
+
+//Block scope is within curly brackets

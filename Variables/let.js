@@ -17,3 +17,5 @@ for (let i = 0; i < 5; i++) {
 }
 
 console.log("Outside the loop: ", i); //Output: Error
+//let is block scope
+
