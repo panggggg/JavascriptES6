@@ -1,17 +1,15 @@
-// const sayHi = (name1, name2, name3, greeting) => {
-//     console.log(greeting + name1);
-//     console.log(greeting + name2);
-//     console.log(greeting + name3);
-// }
-
-// sayHi('James', 'Zarin', 'Rachel', 'Hello ');
-
-
-//Default Parameter
-const sayHi = (name1, name2, name3, greeting = 'Hello ') => {
-    console.log(greeting + name1);
-    console.log(greeting + name2);
-    console.log(greeting + name3);
+function say(message = 'Hi') {
+    console.log(message);
 }
 
-sayHi('James', 'Zarin', 'Rachel');
+say(); // Hi
+say('Hello') // Hello
+
+///////////////////////////////////////////
+
+function add(x, y) { // x, y are parameters
+    return result = x + y;
+}
+
+add(100, 200); //100, 200 are arguments
+console.log(result)
