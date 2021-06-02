@@ -17,7 +17,7 @@ class Person {
 const person = new Person('Jane Doe');
 console.log(person);
 
-person.setName('Jane Smith');
+person.setName('Jane Smith'); //call setName();
 console.log(person.getName());
 
 //Class Person has 2 methods -> getName(), setName()
