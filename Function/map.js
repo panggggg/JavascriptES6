@@ -1,10 +1,58 @@
-//map คือ การวนค่าทุกค่าใน array
 
-const arr = [1, 2, 3, 4, 5]
+let officers = [
+    { id: 20, name: 'Captain Piett' },
+    { id: 24, name: 'General Veers' },
+    { id: 56, name: 'Admiral Ozzel' },
+    { id: 88, name: 'Commander Jerjerrod' }
+];
 
-const multiplyByTwo = arr.map(value => {
-    return value * 2
+var allOfficers = officers.map(value => {
+    return officers //จะวนตามจำนวนของ dict ใน officers
+    //Output: [
+    //   [
+    //     { id: 20, name: 'Captain Piett' },     
+    //     { id: 24, name: 'General Veers' },     
+    //     { id: 56, name: 'Admiral Ozzel' },     
+    //     { id: 88, name: 'Commander Jerjerrod' }
+    //   ],
+    //   [
+    //     { id: 20, name: 'Captain Piett' },
+    //     { id: 24, name: 'General Veers' },
+    //     { id: 56, name: 'Admiral Ozzel' },
+    //     { id: 88, name: 'Commander Jerjerrod' }
+    //   ],
+    //   [
+    //     { id: 20, name: 'Captain Piett' },
+    //     { id: 24, name: 'General Veers' },
+    //     { id: 56, name: 'Admiral Ozzel' },
+    //     { id: 88, name: 'Commander Jerjerrod' }
+    //   ],
+    //   [
+    //     { id: 20, name: 'Captain Piett' },
+    //     { id: 24, name: 'General Veers' },
+    //     { id: 56, name: 'Admiral Ozzel' },
+    //     { id: 88, name: 'Commander Jerjerrod' }
+    //   ]
+    // ]
+});
+console.log(allOfficers)
+
+
+//ID
+var officersIds = officers.map(officer => {
+    return officer.id
+});
+console.log(officersIds) //[ 20, 24, 56, 88 ]
+
+
+//Name
+var nameOfficers = officers.map(officer => {
+    return officer.name
 })
-
-console.log(arr) //[ 1, 2, 3, 4, 5 ]
-console.log(multiplyByTwo) //[ 2, 4, 6, 8, 10 ]
+console.log(nameOfficers)
+//Output : [
+//     'Captain Piett',
+//     'General Veers',
+//     'Admiral Ozzel',
+//     'Commander Jerjerrod'
+//   ]
