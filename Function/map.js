@@ -1,3 +1,4 @@
+//map() จะ return เป็น array
 
 let officers = [
     { id: 20, name: 'Captain Piett' },
@@ -46,9 +47,7 @@ console.log(officersIds) //[ 20, 24, 56, 88 ]
 
 
 //Name
-var nameOfficers = officers.map(officer => {
-    return officer.name
-})
+var nameOfficers = officers.map(officer => officer.name);
 console.log(nameOfficers)
 //Output : [
 //     'Captain Piett',
