@@ -1,10 +1,42 @@
-//filter คือ การกรองค่าตามเงื่อนไข รับ array มาวนเหมือน map แต่เราจะต้องส่ง condition ค่าที่เราต้องการส่งกลับมา
+let pilots = [
+    {
+        id: 2,
+        name: "Wedge Antilles",
+        faction: "Rebels"
+    },
+    {
+        id: 8,
+        name: "Ciena Ree",
+        faction: "Empire"
+    },
+    {
+        id: 40,
+        name: "Iden Versio",
+        faction: "Empire"
+    },
+    {
+        id: 66,
+        name: "Thane Kyrell",
+        faction: "Rebels"
+    },
+];
 
-const arr = [1, 2, 3, 4, 5]
+const rebels = pilots.filter(function (pilot) {
+    return pilot.faction === "Rebels";
+});
+console.log(rebels);
+//Output: [
+//          { id: 2, name: 'Wedge Antilles', faction: 'Rebels' },
+//          { id: 66, name: 'Thane Kyrell', faction: 'Rebels' }
+//         ]
 
-const evenNumbers = arr.filter(value => {
-    return value % 2 === 0
-})
+const empire = pilots.filter(pilot => pilot.faction === "Empire");
+console.log(empire)
+//Output: [
+//    { id: 8, name: 'Ciena Ree', faction: 'Empire' },
+//    { id: 40, name: 'Iden Versio', faction: 'Empire' }
+// ]
 
-console.log(arr) //[ 1, 2, 3, 4, 5 ]
-console.log(evenNumbers) //[ 2, 4 ]
+const Name = pilots.filter(pilot => pilot.name === "Ciena Ree");
+console.log(Name)
+//Output: [ { id: 8, name: 'Ciena Ree', faction: 'Empire' } ]
