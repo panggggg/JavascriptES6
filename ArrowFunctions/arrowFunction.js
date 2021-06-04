@@ -9,3 +9,15 @@ const getRandomNumber = limit =>
     Math.ceil(Math.random() * limit);
 
 console.log(getRandomNumber(100));
+
+//ES5
+// function(arguments) {
+
+// }
+
+
+
+//ES6
+// (arguments) => {
+
+// }
