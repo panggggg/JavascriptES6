@@ -22,10 +22,14 @@ let pilots = [
 ];
 
 
-const totalYears = pilots.reduce(function (accumulator, pilot) {
-    return accumulator + pilot.years;
-}, 0); // starting value as 0 , if start at 100 output will be 182
-console.log(totalYears) //82
+// const totalYears = pilots.reduce(function (accumulator, pilot) {
+//     return accumulator + pilot.years;
+// }, 0); // starting value as 0 , if start at 100 output will be 182
+// console.log(totalYears) //82
+
+const totalYears = pilots.reduce((acc, pilot) => acc + pilot.years, 0)
+console.log(totalYears)
+
 
 //Find the most experirenced
 const mostExpPilot = pilots.reduce((oldest, pilot) => { //oldest is accumulator
